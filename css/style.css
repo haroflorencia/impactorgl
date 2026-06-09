@@ -28,27 +28,42 @@ nav a{
 }
 
 .hero{
-    background:#ff6a00;
+    background:linear-gradient(135deg,#ff6a00,#ff8c00);
+
     color:white;
+
     text-align:center;
-    padding:120px 20px;
+
+    padding:180px 20px;
 }
 
 .hero h1{
-    font-size:3rem;
+    font-size:4rem;
     margin-bottom:20px;
 }
-
+.hero p{
+    font-size:1.3rem;
+    margin-bottom:25px;
+}
 .boton{
     display:inline-block;
-    margin-top:20px;
+
     background:black;
     color:white;
-    text-decoration:none;
-    padding:15px 25px;
-    border-radius:8px;
-}
 
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+    transition:0.3s;
+}
+.boton:hover{
+    transform:scale(1.05);
+}
 section{
     padding:80px 20px;
 }
@@ -70,8 +85,14 @@ h2{
     padding:25px;
     width:300px;
     border-radius:10px;
-}
 
+    transition:0.3s;
+}
+.tarjeta:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
 footer{
     background:black;
     color:white;
@@ -98,4 +119,28 @@ footer{
     font-size:30px;
 
     box-shadow:0 0 15px rgba(0,0,0,.3);
+}
+@media (max-width: 768px){
+
+    header{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    nav a{
+        margin:0 10px;
+    }
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .tarjeta{
+        width:100%;
+    }
+
 }
