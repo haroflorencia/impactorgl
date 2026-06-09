@@ -142,5 +142,14 @@ footer{
     .tarjeta{
         width:100%;
     }
+    #nosotros{
+    background:#f8f8f8;
+    text-align:center;
+}
 
+#nosotros p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+    font-size:1.1rem;
 }
